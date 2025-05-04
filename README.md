@@ -240,7 +240,7 @@ An AI-powered study assistant that helps students manage their learning through 
 
 **BaraBuddy AI** is a smart, student-focused assistant designed to help learners manage their education more effectively. It offers features like AI-generated study plans, progress dashboards, flashcards, and quizzes — all tailored to boost study consistency and learning outcomes.
 
----
+
 
 ## 🎯 Project Overview
 
@@ -251,7 +251,7 @@ An AI-powered study assistant that helps students manage their learning through 
 
 BaraBuddy is built to support students in managing their study habits through personalized recommendations, automated check-ins, and interactive learning features.
 
----
+
 
 ## 🌟 Features
 
@@ -261,7 +261,6 @@ BaraBuddy is built to support students in managing their study habits through pe
 - 📝 **Interactive Flashcards & Auto-Quizzes**: Boost memory with quick, smart quizzes
 - 🔔 **Motivational Check-ins**: Stay motivated with nudges and feedback
 
----
 
 ## 🛠 Tech Stack
 
@@ -269,15 +268,30 @@ BaraBuddy is built to support students in managing their study habits through pe
 - **Development Tools**: Jupyter Notebook, Anaconda
 - **Frontend (optional)**: Streamlit / Flask (for UI)
 
----
+
 
 ## 💡 Problem Statement
 
 Students often struggle with staying consistent, organizing their study routines, and reviewing effectively. BaraBuddy AI helps solve this by providing an intelligent, personalized tool that adapts to each student's progress, learning needs, and habits.
 
----
 
 ## 📁 Installation & Setup
+
+
+
+## 🧠 Open WebUI Integration
+
+This project integrates the [Open WebUI](https://github.com/open-webui/open-webui) interface for advanced AI interaction. 
+
+- The frontend is built using SvelteKit + Vite
+- The backend is powered by FastAPI and serves API endpoints on port `8080`
+- You can start the backend using:
+
+```bash
+cd backend
+python -m uvicorn open_webui.main:app --port 8080 --host 127.0.0.1 --reload
+
+
 
 ```bash
 # Clone the repository
