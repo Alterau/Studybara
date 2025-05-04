@@ -17,6 +17,8 @@ export const WEBUI_VERSION = APP_VERSION;
 export const WEBUI_BUILD_HASH = APP_BUILD_HASH;
 export const REQUIRED_OLLAMA_VERSION = '0.1.16';
 
+export const DEFAULT_PROFILE_IMAGE = `${WEBUI_BASE_URL}/static/barabuddy-logo.png`;
+
 export const SUPPORTED_FILE_TYPE = [
 	'application/epub+zip',
 	'application/pdf',

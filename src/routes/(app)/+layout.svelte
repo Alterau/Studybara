@@ -62,19 +62,21 @@
 			try {
 				// Check if IndexedDB exists
 				DB = await openDB('Chats', 1);
+			} catch (error) {
+				console.error('Error opening IndexedDB:', error);
+			}
 
-				if (DB) {
+			if (DB) {
+				try {
 					const chats = await DB.getAllFromIndex('chats', 'timestamp');
 					localDBChats = chats.map((item, idx) => chats[chats.length - 1 - idx]);
 
 					if (localDBChats.length === 0) {
 						await deleteDB('Chats');
 					}
+				} catch (error) {
+					console.error('Error retrieving chats from IndexedDB:', error);
 				}
-
-				console.log(DB);
-			} catch (error) {
-				// IndexedDB Not Found
 			}
 
 			const userSettings = await getUserSettings(localStorage.token).catch((error) => {
