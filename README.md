@@ -49,6 +49,22 @@ Students often struggle with staying consistent, organizing their study routines
 
 ## 📁 Installation & Setup
 
+---
+
+## 🧠 Open WebUI Integration
+
+This project integrates the [Open WebUI](https://github.com/open-webui/open-webui) interface for advanced AI interaction. 
+
+- The frontend is built using SvelteKit + Vite
+- The backend is powered by FastAPI and serves API endpoints on port `8080`
+- You can start the backend using:
+
+```bash
+cd backend
+python -m uvicorn open_webui.main:app --port 8080 --host 127.0.0.1 --reload
+
+
+
 ```bash
 # Clone the repository
 git clone https://github.com/your-username/barabuddy-ai.git
