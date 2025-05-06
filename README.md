@@ -17,7 +17,6 @@ An AI-powered study assistant that helps students manage their learning through 
 
 - **Project Name:** BaraBuddy
 - **Team Name:** BaraBuddy
-- **Project Manager:** Melissa Soo
 - **SDG Focus:** Quality Education (SDG 4)
 
 BaraBuddy is built to support students in managing their study habits through personalized recommendations, automated check-ins, and interactive learning features.
