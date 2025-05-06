@@ -68,7 +68,110 @@ This guide provides steps to install Open WebUI, ensure necessary executables ar
 2.  Download the Windows installer.
 3.  Run the installer and follow the on-screen instructions.
 
-## Step 2: Install Open WebUI
+
+# 🦫 Barabuddy AI – Local Model Setup Guide
+
+This guide walks you through setting up and building the `barabuddy-limited` model locally using [Ollama](https://ollama.com/), starting from scratch—even if you’re new to the process.
+
+---
+
+
+##Step 1: Download the model i have uploaded in git hub named studybara-1746546173743
+
+After downloading proceed to Step 2
+
+## 📁 Step 2: Create a `Modelfile` from File Explorer
+
+1. Navigate to the folder where you want to store your model, for example:
+
+2. Right-click inside the folder and select:
+New > Text Document
+
+4. Name the file exactly:
+Modelfile
+
+> ⚠️ Important:  
+> - If you see `Modelfile.txt`, remove the `.txt` extension.  
+> - If file extensions are hidden, go to:
+>   - **View > Show > File name extensions** in File Explorer, then rename properly.
+
+---
+
+## ✍️ Step 3: Edit the Modelfile Contents
+
+1. Right-click `Modelfile` and choose **Open with > Notepad**
+2. Paste the following:
+
+FROM llama3
+
+SYSTEM """
+You are Barabuddy, an AI assistant that strictly answers based only on the provided context
+You are Barabuddy. When answering, ONLY provide direct, concise answers. 
+Do NOT include "User Query", context tags, or helper phrases. 
+For example: Respond simply as "SDLC stands for Software Development Life Cycle.".
+
+Follow these rules carefully:
+
+1. **Use Only Provided Context**: 
+   - All necessary information will be enclosed within `<context></context>` tags.
+   - Do NOT use any external knowledge beyond this context.
+
+2. **Understand the User Query**: 
+   - Read the user's question carefully to identify key points and intent.
+
+3. **Respond Only If Context Allows**: 
+   - If the answer is clearly found within the context, respond concisely and accurately.
+   - If the answer is NOT present, reply with:
+     - "I'm sorry, I don't have enough information to answer that."
+
+4. **Ask for Clarification When Needed**: 
+   - If the query is ambiguous, politely request more details.
+
+5. **No Mention of Context Source**: 
+   - Never state that you're using "the provided context" in your response.
+
+6. **Language Consistency**: 
+   - Always respond in the same language as the user's query.
+
+When answering, be clear, concise, and to the point. Avoid unnecessary elaboration or speculation. Do not repeat the question in your answer.
+"""
+
+
+
+
+##After pasting that save the file to save file press  (Ctrl + S) and close Notepad.
+
+Step 4: Open a Terminal Window (CMD or PowerShell)
+Press Windows + R, type:
+powershell
+>Then hit Enter.
+
+
+Step 5:Navigate to your project folder:
+eg..(cd "C:\Users\YourName\Documents\Barabuddy")
+
+
+if its not thereor you dont know where it is check where its located:
+in powershell paste (dir)
+
+
+Step 6: Build the Model with Ollama
+Run this command in powershell:
+ollama create barabuddy-limited -f Modelfile
+
+
+If successful, you'll see something like:
+writing manifest
+success
+
+
+Step 7:Run the Model
+ollama run barabuddy-limited
+
+
+
+
+## Step 8: Install Open WebUI
 
 Open PowerShell and run the following command:
 
@@ -77,6 +180,18 @@ pip install open-webui
 
 ## To run open-webui
 open-webui serve
+```
+
+## After installing Open-webui
+>Sign in or create account for open-webui
+>After signing in go to Workspace
+>In Workspace import model studybara-1746546173743
+>After importing press new chat and start chatting:)
+
+
+
+
+
 
 
 
