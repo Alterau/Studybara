@@ -75,5 +75,8 @@ Open PowerShell and run the following command:
 ```bash
 pip install open-webui
 
+## To run open-webui
+open-webui serve
+
 
 
