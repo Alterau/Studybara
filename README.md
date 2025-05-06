@@ -146,7 +146,7 @@ powershell
 >Then hit Enter.
 
 
-Step 5:Navigate to your project folder:
+Step 5: Navigate to your project folder:
 eg..(cd "C:\Users\YourName\Documents\Barabuddy")
 
 
@@ -164,7 +164,7 @@ writing manifest
 success
 
 
-Step 7:Run the Model
+Step 7: Run the Model
 ollama run barabuddy-limited
 
 
@@ -182,10 +182,10 @@ open-webui serve
 ```
 
 ## After installing Open-webui
->Sign in or create account for open-webui
->After signing in go to Workspace
->In Workspace import model studybara-1746546173743
->After importing press new chat and start chatting:)
+1. Sign in or create account for open-webui
+2. After signing in go to Workspace
+3. In Workspace import model studybara-1746546173743
+4. After importing press new chat and start chatting:)
 
 
 
