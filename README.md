@@ -50,32 +50,30 @@ Students often struggle with staying consistent, organizing their study routines
 
 
 
-## 🧠 Open WebUI Integration
+## Guide: Setting Up Open WebUI with a Custom Ollama Model (Windows)
 
-This project integrates the [Open WebUI](https://github.com/open-webui/open-webui) interface for advanced AI interaction. 
+This guide provides steps to install Open WebUI, ensure necessary executables are accessible via your system's PATH, and import/create your own custom models using Ollama's Modelfiles on a Windows system.
 
-- The frontend is built using SvelteKit + Vite
-- The backend is powered by FastAPI and serves API endpoints on port `8080`
-- You can start the backend using:
+**Note:** This guide assumes you are using PowerShell for commands.
+
+## Prerequisites
+
+* **Python 3.8 or higher:** Required for installing Open WebUI via pip.
+* **pip:** The package installer for Python (usually comes with Python).
+* **Ollama:** The local large language model runner. Download and install the Windows version from [ollama.com](https://ollama.com/download).
+
+## Step 1: Install Ollama
+
+1.  Go to [ollama.com/download](https://ollama.com/download).
+2.  Download the Windows installer.
+3.  Run the installer and follow the on-screen instructions.
+
+## Step 2: Install Open WebUI
+
+Open PowerShell and run the following command:
 
 ```bash
-cd backend
-python -m uvicorn open_webui.main:app --port 8080 --host 127.0.0.1 --reload
+pip install open-webui
 
 
 
-```bash
-# Clone the repository
-git clone https://github.com/your-username/barabuddy-ai.git
-cd barabuddy-ai
-
-# Create and activate a virtual environment (Anaconda recommended)
-conda create --name barabuddy python=3.9
-conda activate barabuddy
-
-# Install required libraries
-pip install -r requirements.txt
-
-# Run the app
-python app.py
->>>>>>> 49ca1592b19c7f7e35fcab8c40417cd9e7f882c8
