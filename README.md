@@ -138,7 +138,7 @@ When answering, be clear, concise, and to the point. Avoid unnecessary elaborati
 
 
 
-##After pasting that save the file to save file press  (Ctrl + S) and close Notepad.
+## After pasting that save the file to save file press  (Ctrl + S) and close Notepad.
 
 Step 4: Open a Terminal Window (CMD or PowerShell)
 Press Windows + R, type:
