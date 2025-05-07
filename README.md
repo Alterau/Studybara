@@ -182,6 +182,9 @@ pip install open-webui
 open-webui serve
 ```
 
+## To open open-webui key in in your google search:
+http://localhost:8080
+
 ## After installing Open-webui
 1. Sign in or create account for open-webui
 2. After signing in go to Workspace
