@@ -151,8 +151,8 @@ Step 5: Navigate to your project folder:
 eg..(cd "C:\Users\YourName\Documents\Barabuddy")
 
 
-if its not thereor you dont know where it is check where its located:
-in powershell paste (dir)
+if its not there or you dont know where it is check where its located:
+in powershell paste: dir
 
 
 Step 6: Build the Model with Ollama
