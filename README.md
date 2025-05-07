@@ -152,13 +152,17 @@ eg..(cd "C:\Users\YourName\Documents\Barabuddy")
 
 
 if its not there or you dont know where it is check where its located:
-in powershell paste: dir
-
+in powershell paste: 
+```bash
+dir
+```
 
 Step 6: Build the Model with Ollama
 Run this command in powershell:
-ollama create barabuddy-limited -f Modelfile
 
+```bash
+ollama create barabuddy-limited -f Modelfile
+```
 
 If successful, you'll see something like:
 writing manifest
