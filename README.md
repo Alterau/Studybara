@@ -141,13 +141,13 @@ When answering, be clear, concise, and to the point. Avoid unnecessary elaborati
 
 ## After pasting that save the file to save file press  (Ctrl + S) and close Notepad.
 
-Step 5: Open a Terminal Window (CMD or PowerShell)
+# Step 5: Open a Terminal Window (CMD or PowerShell)
 Press Windows + R, type:
 powershell
 >Then hit Enter.
 
 
-Step 6: Navigate to your project folder:
+# Step 6: Navigate to your project folder:
 eg..("C:\Users\YourName")
 
 
@@ -157,7 +157,7 @@ in powershell paste:
 dir
 ```
 
-Step 7: Build the Model with Ollama
+# Step 7: Build the Model with Ollama
 Run this command in powershell:
 
 ```bash
@@ -173,7 +173,7 @@ writing manifest
 success
 
 
-Step 8: Run the Model
+# Step 8: Run the Model
 
 ```bash
 ollama run barabuddy-limited
