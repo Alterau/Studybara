@@ -93,6 +93,7 @@ Modelfile
 > ⚠️ Important:  
 > - If you see `Modelfile.txt`, remove the `.txt` extension.  
 > - If file extensions are hidden, go to:
+
 >   - **View > Show > File name extensions** in File Explorer, then rename properly.
 
 ---
@@ -101,6 +102,7 @@ Modelfile
 
 1. Right-click `Modelfile` and choose **Open with > Notepad**
 2. Paste the following:
+```bash
 
 FROM llama3
 
@@ -137,7 +139,7 @@ When answering, be clear, concise, and to the point. Avoid unnecessary elaborati
 """
 
 
-
+```
 
 ## After pasting that save the file to save file press  (Ctrl + S) and close Notepad.
 
@@ -148,7 +150,7 @@ powershell
 
 
 Step 5: Navigate to your project folder:
-eg..(cd "C:\Users\YourName\Documents\Barabuddy")
+eg..("C:\Users\YourName")
 
 
 if its not there or you dont know where it is check where its located:
@@ -165,13 +167,19 @@ ollama create barabuddy-limited -f Modelfile
 ```
 
 If successful, you'll see something like:
+
+
 writing manifest
+
+
 success
 
 
 Step 7: Run the Model
-ollama run barabuddy-limited
 
+```bash
+ollama run barabuddy-limited
+```
 
 
 
@@ -181,7 +189,8 @@ Open PowerShell and run the following command:
 
 ```bash
 pip install open-webui
-
+```
+```bash
 ## To run open-webui
 open-webui serve
 ```
