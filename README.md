@@ -82,8 +82,9 @@ After downloading proceed to Step 2
 ## 📁 Step 2: Create a `Modelfile` from File Explorer
 
 1. Navigate to the folder where you want to store your model, for example:
+C:\Users\YourName\Documents\Barabuddy
 
-2. Right-click inside the folder and select:
+3. Right-click inside the folder and select:
 New > Text Document
 
 4. Name the file exactly:
