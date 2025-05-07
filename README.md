@@ -70,7 +70,8 @@ This guide provides steps to install Open WebUI, ensure necessary executables ar
 3.  Run the installer and follow the on-screen instructions.
 
 
-## Step 2: Download the model i have uploaded in git hub named studybara-1746546173743
+## Step 2: Download the model located at the top named:
+
 
 After downloading proceed to Step 2
 
