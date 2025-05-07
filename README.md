@@ -143,8 +143,10 @@ When answering, be clear, concise, and to the point. Avoid unnecessary elaborati
 
 # Step 5: Open a Terminal Window (CMD or PowerShell)
 Press Windows + R, type:
+```bash
 powershell
->Then hit Enter.
+```
+Then hit Enter.
 
 
 # Step 6: Navigate to your project folder:
