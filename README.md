@@ -45,8 +45,10 @@ BaraBuddy is built to support students in managing their study habits through pe
 Students often struggle with staying consistent, organizing their study routines, and reviewing effectively. BaraBuddy AI helps solve this by providing an intelligent, personalized tool that adapts to each student's progress, learning needs, and habits.
 
 
-## 📁 Installation & Setup
+### 📁 Installation & Setup
+## 🦫 Barabuddy AI – Local Model Setup Guide
 
+This guide walks you through setting up and building the `barabuddy-limited` model locally using [Ollama](https://ollama.com/), starting from scratch—even if you’re new to the process.
 
 
 ## Guide: Setting Up Open WebUI with a Custom Ollama Model (Windows)
@@ -68,18 +70,11 @@ This guide provides steps to install Open WebUI, ensure necessary executables ar
 3.  Run the installer and follow the on-screen instructions.
 
 
-# 🦫 Barabuddy AI – Local Model Setup Guide
-
-This guide walks you through setting up and building the `barabuddy-limited` model locally using [Ollama](https://ollama.com/), starting from scratch—even if you’re new to the process.
-
----
-
-
-##Step 1: Download the model i have uploaded in git hub named studybara-1746546173743
+## Step 2: Download the model i have uploaded in git hub named studybara-1746546173743
 
 After downloading proceed to Step 2
 
-## 📁 Step 2: Create a `Modelfile` from File Explorer
+## 📁 Step 3: Create a `Modelfile` from File Explorer
 
 1. Navigate to the folder where you want to store your model, for example:
 C:\Users\YourName\Documents\Barabuddy
@@ -98,7 +93,7 @@ Modelfile
 
 ---
 
-## ✍️ Step 3: Edit the Modelfile Contents
+## ✍️ Step 5: Edit the Modelfile Contents
 
 1. Right-click `Modelfile` and choose **Open with > Notepad**
 2. Paste the following:
@@ -143,13 +138,13 @@ When answering, be clear, concise, and to the point. Avoid unnecessary elaborati
 
 ## After pasting that save the file to save file press  (Ctrl + S) and close Notepad.
 
-Step 4: Open a Terminal Window (CMD or PowerShell)
+Step 6: Open a Terminal Window (CMD or PowerShell)
 Press Windows + R, type:
 powershell
 >Then hit Enter.
 
 
-Step 5: Navigate to your project folder:
+Step 7: Navigate to your project folder:
 eg..("C:\Users\YourName")
 
 
@@ -159,7 +154,7 @@ in powershell paste:
 dir
 ```
 
-Step 6: Build the Model with Ollama
+Step 8: Build the Model with Ollama
 Run this command in powershell:
 
 ```bash
@@ -175,7 +170,7 @@ writing manifest
 success
 
 
-Step 7: Run the Model
+Step 9: Run the Model
 
 ```bash
 ollama run barabuddy-limited
@@ -183,7 +178,7 @@ ollama run barabuddy-limited
 
 
 
-## Step 8: Install Open WebUI
+## Step 10: Install Open WebUI
 
 Open PowerShell and run the following command:
 
