@@ -102,7 +102,7 @@ Modelfile
 2. Paste the following:
 ```bash
 
-FROM barabuddy:latest
+From llama3
 
 PARAMETER temperature 0.0
 PARAMETER top_p 0.8
