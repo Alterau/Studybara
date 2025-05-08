@@ -167,15 +167,9 @@ writing manifest
 success
 
 
-# Step 8: Run the Model
-
-```bash
-ollama run barabuddy-limited
-```
 
 
-
-## Step 9: Install Open WebUI
+## Step 8: Install Open WebUI
 
 Open PowerShell and run the following command:
 
@@ -194,8 +188,8 @@ http://localhost:8080
 1. Sign in or create account for open-webui
 2. After signing in go to Workspace
 3. In Workspace import model studybara-1746546173743
-4. After importing press new chat and start chatting:)
 
+### Make sure to click into models and select the model Barabuddy
 
 
 
